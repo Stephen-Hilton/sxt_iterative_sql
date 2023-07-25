@@ -19,7 +19,7 @@ def merge_files(iterSQL_Requests={}):
         
     for sqlObject in iterSQL_Requests:
 
-        print(f'--------- ITERATIVE MERGE FOR TABLE {tablename_regex_pattern} ---------')
+        print(f'--------- ITERATIVE MERGE FOR TABLE {sqlObject["filename"] } ---------')
         subfolderpath = sqlObject['folderpath']
         tablename_regex_pattern = sqlObject['filename']
 
