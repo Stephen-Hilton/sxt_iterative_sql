@@ -9,7 +9,8 @@ Iteratively retrieves data into a collection of files, one per "rows_per_file" r
 ## iterMerge
 Iteratively loops thru files produced in iterExtract and merges into a single return file. 
 
-Both functions take a iterSQL_Request json object that looks like:
+## iterSQL_Request Object
+Both functions require a iterSQL_Request json object that looks like:
 
 
 ```
@@ -28,4 +29,4 @@ sample_json = [ {'name': 'Name of my query'
               ]
 ```
 
-You can submit multiple requests.
+You can submit multiple requests, although the above only shows one.
