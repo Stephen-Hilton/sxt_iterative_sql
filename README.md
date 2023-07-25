@@ -38,6 +38,6 @@ When authoring the SQL, you will need to add the following, wrapped in {curly_br
 - {order_by} = constructed from an "ORDER BY {pkname}" to ensure the dataset order
 - {limit_n} = constructed from an "LIMIT {rows_per_file}" to limit to a specific size
 
-After each {rows_per_file} rows, the SQL is re-run, so this is FAR from the most efficient approach.
+After each {rows_per_file} rows, the SQL is re-run, so this is FAR from the most efficient approach.  The process will attempt to re-run after failures, although will wait 5min between re-try attempts (to prevent an automated bl
 
 You can submit multiple requests, although the above only shows one.
